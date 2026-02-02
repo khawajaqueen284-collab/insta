@@ -1,0 +1,147 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.login-box {
+  width: 320px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  background: linear-gradient(180deg,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  );
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Grand Hotel', cursive;
+  color: white;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0095f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #007ad6;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: white;
+  font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: white;
+}
+
+.divider span {
+  margin: 0 10px;
+}
+
+.facebook-login {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup {
+  margin-top: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+.signup a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h1 class="logo">Instagram</h1>
+
+    <input type="text" id="username" placeholder="Phone number, username, or email">
+    <input type="password" id="password" placeholder="Password">
+
+    <a href="#" class="forgot">Forgot password?</a>
+
+    <button onclick="login()">Log In</button>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <div class="facebook-login">
+      <span>Log in with Facebook</span>
+    </div>
+
+    <p class="signup">
+      Don’t have an account? <a href="#">Sign up</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
